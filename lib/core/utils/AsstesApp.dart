@@ -6,6 +6,7 @@ class FontFamilies {
 class AssetsImage {
   static const _assetesFolder = "assets/images/";
   static const String animatedBall = "${_assetesFolder}animated_ball.png";
+  static const String flags = "${_assetesFolder}flags.jpg";
 }
 
 // class AssetsSound {

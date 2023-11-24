@@ -8,6 +8,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      drawer: Drawer(),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(
