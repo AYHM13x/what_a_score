@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+import 'core/utils/AsstesApp.dart';
+import 'core/utils/app_routrer.dart';
+
 void main() {
   runApp(const WhatAScore());
 }
@@ -9,9 +13,14 @@ class WhatAScore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
+      title: kAppName,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        fontFamily: FontFamilies.comicSansMS,
+      ),
     );
   }
 }
