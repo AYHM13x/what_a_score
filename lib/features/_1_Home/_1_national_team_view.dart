@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:what_a_score/features/_1_Home/bodies/_1_national_team_view_body.dart';
 
 class NationalTeamView extends StatelessWidget {
   const NationalTeamView({super.key});
@@ -15,9 +16,7 @@ class NationalTeamView extends StatelessWidget {
             right: 8,
             left: 8,
           ),
-          child: Center(
-            child: Text(""),
-          ),
+          child: NationalTeamViewBody(),
         ),
       ),
     );

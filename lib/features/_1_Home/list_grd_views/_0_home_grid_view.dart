@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:what_a_score/core/utils/app_routrer.dart';
 
 import '../../../core/utils/dimensions_of_screen.dart';
-import '../widgets/home_item_view.dart';
+import '../widgets/_0_home_item_view.dart';
 
 class HomeGridView extends StatelessWidget {
   const HomeGridView({super.key});
