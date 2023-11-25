@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'bodies/home_view_body.dart';
-
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class NationalTeamView extends StatelessWidget {
+  const NationalTeamView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +16,7 @@ class HomeView extends StatelessWidget {
             left: 8,
           ),
           child: Center(
-            child: HomeViewBody(),
+            child: Text(""),
           ),
         ),
       ),
