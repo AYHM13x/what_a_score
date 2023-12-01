@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../appbars/home_view_appbar.dart';
-import '../list_grd_views/_0_home_grid_view.dart';
+import '../list_grid_views/_0_home_grid_view.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});

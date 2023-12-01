@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:what_a_score/core/utils/styles.dart';
 
 import '../../../core/utils/app_colors.dart';
+import '../../../core/utils/styles.dart';
 
 class NationalTeamItem extends StatelessWidget {
   const NationalTeamItem({super.key, required this.id});
@@ -13,7 +13,7 @@ class NationalTeamItem extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8),
       child: Container(
         padding: const EdgeInsets.all(8),
-        height: 80,
+        height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(22),
           border: Border.all(color: AppColors.blackColor),
@@ -21,22 +21,34 @@ class NationalTeamItem extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              "$id - ",
+              id < 10 ? "$id  -" : "$id -",
               style: Styles.textStyle16,
             ),
+            const Gap(8),
             ClipRRect(
               borderRadius: BorderRadius.circular(22),
               child: Image.network(
-                  "https://apiv3.apifootball.com/badges/logo_country/107_syria.png"),
+                "https://apiv3.apifootball.com/badges/logo_country/107_syria.png",
+                //height: 40,
+              ),
             ),
             const Gap(8),
             const Text(
               "Syria",
-              style: Styles.textStyle20,
-            )
+              style: Styles.textStyle16,
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+
+//  ClipRRect(
+//               borderRadius: BorderRadius.circular(22),
+//               child: Image.network(
+//                 "https://apiv3.apifootball.com/badges/logo_country/107_syria.png",
+//                 //height: 40,
+//               ),
+//             ),

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../appbars/home_view_appbar.dart';
-import '../list_grid_views/_1_national_team_list_view.dart';
+import '../list_grid_views/_2_competions_grid_view.dart';
 
-class NationalTeamViewBody extends StatelessWidget {
-  const NationalTeamViewBody({super.key});
+class CompetitionsViewBody extends StatelessWidget {
+  const CompetitionsViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class NationalTeamViewBody extends StatelessWidget {
         Gap(24),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 8),
-          child: NationalTeamListView(),
+          child: CompetitionsGridView(),
         ),
       ],
     );

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:what_a_score/core/utils/dimensions_of_screen.dart';
 
+import '../../../core/utils/app_routrer.dart';
 import '../widgets/_1_national_team_item_view.dart';
 
 class NationalTeamListView extends StatelessWidget {
@@ -11,10 +13,16 @@ class NationalTeamListView extends StatelessWidget {
     return SizedBox(
       height: DimensionsOfScreen.dimensionsOfHeight(context, 84),
       child: ListView.builder(
+        physics: const BouncingScrollPhysics(),
         itemCount: 10,
         itemBuilder: (context, index) {
-          return NationalTeamItem(
-            id: index + 1,
+          return GestureDetector(
+            onTap: () {
+              GoRouter.of(context).push(AppRouter.competitionsViewPath);
+            },
+            child: NationalTeamItem(
+              id: index + 1,
+            ),
           );
         },
       ),
